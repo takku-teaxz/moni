@@ -1,3 +1,3 @@
-# モニタリングノート 菜花 v4
-
-GitHub Pages用。カレンダー表示、利用者カードのはみ出し修正、下部ナビのデザイン改善版。
+# モニタリングノート 神社幻想デザイン版
+GitHub Pages用。index.html / style.css / app.js / bg.jpg を同じ階層へアップロードしてください。
+データはブラウザのlocalStorageに保存されます。
