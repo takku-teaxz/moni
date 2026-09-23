@@ -50,3 +50,12 @@ nav{z-index:20;height:76px;padding:5px 12px calc(5px + env(safe-area-inset-botto
 .bottomInpatient{margin-top:28px}.recent-discharge{box-shadow:0 12px 30px rgba(15,8,5,.24),inset 4px 0 rgba(159,53,43,.35)}
 .hospitalPanel,.hospitalCurrent,.hospitalForm,.hospitalCurrent form,.hospitalPanel label{min-width:0;max-width:100%}.hospitalPanel{overflow:hidden}.hospitalForm,.hospitalCurrent form{grid-template-columns:minmax(0,1fr) minmax(118px,auto)}.hospitalPanel input[type="date"]{min-width:0;max-width:100%;box-sizing:border-box}.hospitalPanel .primary,.hospitalPanel .ghost{max-width:100%;white-space:normal}.stayHistory div{min-width:0;flex-wrap:wrap}.stayHistory span,.stayHistory b{overflow-wrap:anywhere}
 @media(max-width:520px){.hospitalForm,.hospitalCurrent form{grid-template-columns:1fr}.hospitalPanel{padding:14px}.hospitalPanel input[type="date"]{width:100%;font-size:16px}.hospitalPanel .primary,.hospitalPanel .ghost{width:100%}}
+
+/* ===== Calendar admission / discharge events ===== */
+.calCell.hasHospitalEvent{box-shadow:inset 0 0 0 1px rgba(118,91,62,.10)}
+.calHospital{width:100%;margin-top:3px;padding:3px 2px;border-radius:6px;font-size:7px;font-weight:800;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left}
+.calHospital span{display:inline-block;border-radius:999px;padding:1px 3px;margin-right:1px;font-size:6px;letter-spacing:.02em}
+.calHospital.admission{background:rgba(86,104,112,.13);color:#46585f}.calHospital.admission span{background:#5f737a;color:#fff}
+.calHospital.discharge{background:rgba(176,91,68,.12);color:#864838}.calHospital.discharge span{background:#a95a45;color:#fff}
+.calLegend{justify-content:flex-start;flex-wrap:wrap;gap:8px 12px}.admissionDot{background:#5f737a}.dischargeDot{background:#a95a45}.calPending{text-align:right;margin-top:7px;color:#6e6054;font-size:11px}
+@media(max-width:390px){.calHospital{font-size:6px;padding:3px 1px}.calHospital span{font-size:5px;padding:1px 2px}.calLegend{font-size:10px;gap:6px 9px}}
