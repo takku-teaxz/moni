@@ -93,3 +93,21 @@ body{
   background-position:center top!important;
   background-attachment:fixed!important;
 }
+
+/* ===== 2026-09-24 compact header / wasted-space fix ===== */
+header{height:126px!important;padding:18px 20px 12px!important;display:flex!important;align-items:center!important;background:linear-gradient(180deg,rgba(255,251,235,.42),rgba(255,251,235,.06))!important}
+header:after{height:24px!important}
+.brandRow{gap:11px!important;align-items:center!important}
+.brandRow img{width:58px!important;height:58px!important;border-radius:17px!important}
+.private{font-size:10px!important;margin:0 0 1px!important;line-height:1.15!important}
+h1{font-size:30px!important;line-height:1!important;margin:0!important}
+.brandSub{font-size:10px!important;margin-top:4px!important;line-height:1.1!important}
+main{padding-top:8px!important}
+.usersHead{margin-top:0!important;margin-bottom:10px!important}
+.usersHead h2{font-size:29px!important;margin-top:3px!important}
+.usersHead .eyebrow{font-size:10px!important}
+.historyIntro{margin-top:0!important;margin-bottom:9px!important}
+.historyIntro .sectionLabel{font-size:27px!important}
+.historyIntro p{margin:4px 0 0!important;font-size:12px!important}
+.monthPanel{margin-top:0!important}
+@media(max-width:520px){header{height:118px!important;padding:14px 18px 10px!important}.brandRow img{width:54px!important;height:54px!important;border-radius:16px!important}h1{font-size:28px!important}main{padding-top:6px!important}.usersHead h2{font-size:28px!important}.historyIntro .sectionLabel{font-size:25px!important}}
