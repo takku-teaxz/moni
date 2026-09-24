@@ -59,3 +59,37 @@ nav{z-index:20;height:76px;padding:5px 12px calc(5px + env(safe-area-inset-botto
 .calHospital.discharge{background:rgba(176,91,68,.12);color:#864838}.calHospital.discharge span{background:#a95a45;color:#fff}
 .calLegend{justify-content:flex-start;flex-wrap:wrap;gap:8px 12px}.admissionDot{background:#5f737a}.dischargeDot{background:#a95a45}.calPending{text-align:right;margin-top:7px;color:#6e6054;font-size:11px}
 @media(max-width:390px){.calHospital{font-size:6px;padding:3px 1px}.calHospital span{font-size:5px;padding:1px 2px}.calLegend{font-size:10px;gap:6px 9px}}
+
+
+/* ===== 2026-09-24 MONI cute theme ===== */
+:root{--ink:#4a302b;--paper:#fff6ed;--paper2:#fffaf5;--gold:#d99b78;--gold2:#f3c6ad;--red:#b85c58;--red2:#d77b72;--green:#718a64;--muted:#846f67;--line:rgba(137,91,79,.18)}
+html,body{background:#f4cfd0;background-image:radial-gradient(circle at 15% 8%,rgba(255,255,255,.82) 0 8%,transparent 24%),radial-gradient(circle at 90% 22%,rgba(255,235,229,.85) 0 10%,transparent 30%),linear-gradient(180deg,#e8aeb0 0,#f6d9d2 36%,#f8e9dc 100%);background-attachment:fixed}
+body:before{background:linear-gradient(180deg,rgba(117,65,62,.04),rgba(104,69,55,.08))}
+header{height:245px;padding:48px 25px 22px;color:#5c3731;text-shadow:none;background:linear-gradient(180deg,rgba(255,246,240,.34),rgba(255,240,235,.08))}
+header:after{background:linear-gradient(transparent,rgba(177,104,100,.10))}.brandRow{display:flex;align-items:center;gap:14px;position:relative;z-index:2}.brandRow img{width:76px;height:76px;border-radius:22px;box-shadow:0 8px 24px rgba(107,57,50,.18);border:3px solid rgba(255,255,255,.7)}
+.private{color:#805c55;margin-bottom:3px;font-family:inherit;font-size:12px}.brandSub{font-size:12px;color:#8a625c;margin-top:2px;letter-spacing:.08em}h1{color:#5a342e;text-shadow:none;font-size:38px;letter-spacing:.06em}
+.card,.monthSwitcher{background:linear-gradient(145deg,rgba(255,251,245,.97),rgba(255,236,226,.95));border:1px solid rgba(213,151,139,.42);box-shadow:0 10px 26px rgba(105,61,55,.14),inset 0 1px rgba(255,255,255,.88)}
+.monthPanel{margin-top:-34px}.monthChip{background:rgba(239,191,169,.42)}.ring{background:conic-gradient(#d98f8b 0 calc(var(--p)*1%),rgba(171,124,112,.15) 0)}.ringInner{background:#fff9f3}.summaryCopy i{border-color:#d98f8b}
+.targetHead,.usersHead,.historyIntro,.detailHero,main>h2{color:#fff8f2;text-shadow:0 2px 8px rgba(91,49,46,.32)}.eyebrow{color:#fff1e8;text-shadow:0 2px 8px rgba(91,49,46,.28)}
+.primary{border-color:#e39a8c;background:linear-gradient(180deg,#df8378,#b85652);box-shadow:0 7px 18px rgba(135,64,60,.22),inset 0 1px rgba(255,255,255,.28)}.ghost{background:rgba(255,250,244,.96);border-color:rgba(170,116,100,.2);color:#583b34}.danger{background:#87524f}
+.is-done{background:linear-gradient(120deg,rgba(239,246,224,.97),rgba(255,244,235,.96));border-color:#8ba177}.is-pending{background:linear-gradient(120deg,rgba(255,234,220,.98),rgba(255,248,239,.96));border-color:#dd9b7f}.is-pending .pill{background:#f4c3ad;color:#8b4c3f}
+.userListCard{background:linear-gradient(145deg,rgba(255,250,244,.98),rgba(255,233,223,.96))}.nextMonthBadge{color:#8a5a4e;background:rgba(239,191,169,.28);border-color:rgba(205,135,116,.25)}.userBirthday{display:inline-flex;align-items:center;margin-top:5px;font-size:11px;color:#8b6258;background:rgba(255,255,255,.46);border-radius:999px;padding:3px 7px}.contact{color:#7d675f}
+.inpatientCard{background:linear-gradient(135deg,rgba(245,240,235,.97),rgba(225,235,229,.95))}.historyTabs{background:rgba(102,62,58,.48);border-color:rgba(255,225,211,.5)}.historyTabs .active{background:linear-gradient(90deg,#bd6963,#df9182)}
+nav{background:rgba(80,49,47,.94);border-top:1px solid rgba(255,222,209,.2);box-shadow:0 -6px 24px rgba(74,43,41,.15)}nav button{color:#f8e7df}nav button.active{color:#ffd3bd}nav button.active b{background:rgba(244,174,144,.12);box-shadow:0 0 0 1px rgba(255,199,172,.45),0 0 18px rgba(255,173,139,.18)}
+.profileForm,.hospitalPanel,.itemCard,.previous,.performerCard,.recordCard,.exportPanel{background:linear-gradient(145deg,rgba(255,251,246,.98),rgba(255,237,228,.96))}textarea,input,.exportFilters select,.monthSwitcher select{background:#fffaf6;border-color:#dfc0b4;color:#513832}.ruleNote{background:rgba(240,202,178,.28);color:#795449}
+/* Prevent date fields from pushing the profile card wider than the screen */
+.profileForm,.profileForm form,.profileForm .two,.profileForm .two>div{min-width:0;max-width:100%}.profileForm input[type="date"]{min-width:0;max-width:100%;width:100%;box-sizing:border-box}
+@media(max-width:520px){.profileForm .two{grid-template-columns:1fr}.profileForm{overflow:hidden}.profileForm input[type="date"]{font-size:16px}.brandRow img{width:68px;height:68px;border-radius:20px}h1{font-size:35px}}
+
+/* ===== 菜の花テーマ final ===== */
+html,body{max-width:100%;overflow-x:hidden}
+*,*::before,*::after{box-sizing:border-box}
+input,select,textarea,button{max-width:100%;min-width:0}
+input[type="date"]{display:block;width:100%;min-width:0;-webkit-appearance:none;appearance:none}
+.form-card,.card,.panel,.user-card,.person-card{max-width:100%;overflow:hidden}
+body{
+  background-image:linear-gradient(rgba(255,251,235,.10),rgba(255,251,235,.10)),url("bg.jpg")!important;
+  background-size:cover!important;
+  background-position:center top!important;
+  background-attachment:fixed!important;
+}
